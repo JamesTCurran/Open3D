@@ -87,6 +87,9 @@ public:
     /// Function to destroy a window
     /// This function MUST be called from the main thread.
     void DestroyVisualizerWindow();
+    
+    /// Function to maximize the window
+    void MaximizeWindow();
 
     /// Function to register a callback function for animation
     /// The callback function returns if UpdateGeometry() needs to be run

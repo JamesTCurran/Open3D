@@ -209,6 +209,15 @@ void Visualizer::DestroyVisualizerWindow() {
     glfwDestroyWindow(window_);
 }
 
+void Visualizer::MaximizeWindow() {
+    
+    if( is_initialized_ )
+    {
+        glfwMaximizeWindow(window_);
+    }
+}
+
+
 void Visualizer::RegisterAnimationCallback(
         std::function<bool(Visualizer *)> callback_func) {
     animation_callback_func_ = callback_func;
